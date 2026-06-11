@@ -35,7 +35,7 @@ fn main() {
    ~~~~~~~  ~| =(Y_)=-  |
   ~~~~    ~~~|   U      |~~
 
-Project:   https://github.com/containers/podman
+Project:   https://github.com/podman-container-tools/podman
 Website:   https://podman.io
 Documents: https://docs.podman.io
 Twitter:   @Podman_io
