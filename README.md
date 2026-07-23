@@ -7,6 +7,7 @@ There are multiple scripts available
 - *run-containers.sh* : This script starts few containers
 - *pods/start-pods.sh* : This script starts few pods
 - *compose/compose-demo.sh* : This script start a docker-compose 
+- *compose/grocery-kube-play-demo* : Demo project for compose -> kompose -> podman kube play workflow
 
 You can run these scripts individually.
 Or you can use the `init.sh`file to set all things up.
