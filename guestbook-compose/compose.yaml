@@ -19,18 +19,17 @@ services:
   redis-leader:
     container_name: redis-leader
     image: docker.io/library/redis@sha256:234c902a2db49461a129e2d4aeff85b28cf20187ed274a67f6e50995fa713c7b
-    ports:
+    expose:
       - "6379"
 
   redis-replica:
     container_name: redis-replica
     image: docker.io/library/redis@sha256:234c902a2db49461a129e2d4aeff85b28cf20187ed274a67f6e50995fa713c7b
-    ports:
-      - "6379"
     command: redis-server --replicaof redis-leader 6379
 
   web:
     container_name: web
+    image: web:1.0.0
     build: ./web
     ports:
       - "8080:8080"
